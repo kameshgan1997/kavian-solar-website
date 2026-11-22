@@ -1,0 +1,1 @@
+export const wa=(process.env.NEXT_PUBLIC_WHATSAPP_NUMBER||"918527260489").replace(/\\D/g,""); export const waLink=(message:string)=>`https://wa.me/${wa}?text=${encodeURIComponent(message)}`;
